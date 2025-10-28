@@ -20,7 +20,8 @@ function Header() {
   const [openDialog, setOpenDialog] = useState(false);
 
   useEffect(() => {
-    console.log(user)
+console.log(user?.name);
+
   })
 
   const login = useGoogleLogin({
@@ -46,7 +47,7 @@ function Header() {
 
   return (
     <div className='shadow-sm flex justify-between items-center px-6'>
-      <img src="/logo.svg" alt="Logo" />
+      <a href="/"><img src="/tripZen.webp" alt="Logo" style={{width: '40px',margin: '10px'}} /></a>
       <div>
         {user ?
           <div className='flex items-center gap-3'>

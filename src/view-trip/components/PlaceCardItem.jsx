@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { Button } from '@/components/ui/button'
-import { FaMapLocationDot } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 import { GetPlaceDetails, PHOTO_REF_URL } from '@/service/GlobalApi';
 
@@ -30,7 +28,7 @@ function PlaceCardItem({place}) {
             <h2 className='font-bold text-lg'>{place.place}</h2>
             <p className='text-sm text-gray-500'>{place.details}</p>
             {/* <h2>place.timetoTravel</h2> */}
-            <h2 className='text-xs font-medium mt-2 mb-2'>🏷️Ticket: {place.ticket_pricing}</h2>
+            <h2 className='text-xs font-medium mt-2 mb-2'>🏷️Ticket: {place.ticketPricing}</h2>
             {/* <Button size="sm"><FaMapLocationDot /></Button> */}
         </div>
     </div>

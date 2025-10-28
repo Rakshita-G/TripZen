@@ -11,6 +11,7 @@ function Hero() {
 
       <Link to={'/create-trip'}><Button>Get Started, It's free</Button></Link>
 
+      <h1 className='font-extrabold text-[50px] text-center mt-10'>TripZen</h1>
       <img src="/landing.png" alt="" className='w-[750px]' />
 
     </div>
